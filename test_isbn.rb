@@ -15,4 +15,8 @@ class Test_isbn <Minitest::Test
   def test_isbn_877195869x
   	assert_equal(10, check_sum("877195869x"))
   end
-end
+  
+  def test_if_11_numbers_return_false
+  	assert_equal(false, check_ISBN10?("93658275897"))
+  end
+end  
