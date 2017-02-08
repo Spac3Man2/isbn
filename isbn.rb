@@ -73,7 +73,7 @@ def calculate_checksum(num)
 			index += 1
 		end
 
-		return ((10 - (sum % 10)) % 10).to_s
+		return ((10 - (sum % 10)) % 10)
 
     end
 end    
