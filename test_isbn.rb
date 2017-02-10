@@ -33,7 +33,8 @@ def test_if_letter_returns_true
     end
 
 def test_if_letter_X_is_still_true
-    assert_equal(false, check_x("563X977"))    
+    assert_equal(false, check_x("563X977"))  
+    assert_equal(true, check_x("563888977x"))  
     end
 def test_if_isbn_13_and_10_pass_together
     assert_equal(true, valid_isbn?("978-0-13-149505-0"))  
@@ -51,14 +52,17 @@ def test_if_isbn_13_and_10_pass
     assert_equal(false, valid_isbn?("978-$-13-149505-0"))  
     end
 
-def test_valid_10_digit_isbn
-    assert_equal(true, valid_isbn?("0321146530")) 
-    end  
+	# def test_valid_10_digit_isbn
+	#     assert_equal(true, valid_isbn?("0321146530")) 
+ #    end  
 
 def test_valid_10_digit_isbn767
     assert_equal(true, valid_isbn?("0-321 14 6530")) 
     end  
 def test_valid_10_digit_isbn_x
-    assert_equal(true, valid_isbn?("877195869x")) 
-    end                   
+    assert_equal(true, valid_isbn?("877195869X")) 
+    end  
+    def test_valid_10_digit_isbn_x_1
+    assert_equal(false, valid_isbn?("x77195869X")) 
+    end                  
 end
