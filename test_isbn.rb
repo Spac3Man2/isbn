@@ -32,8 +32,11 @@ def test_if_letter_returns_true
 	assert_equal(true, check_x("98763X"))
     end
 
-def test_if_letter_X_is_still_true
-    assert_equal(false, check_x("563X977"))  
+def test_if_letter_X_returns_false
+    assert_equal(false, check_x("563X977"))
+    end
+
+def test_if_letter_x_returns_true      
     assert_equal(true, check_x("563888977x"))  
     end
 def test_if_isbn_13_and_10_pass_together
