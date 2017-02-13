@@ -124,6 +124,8 @@ def valid_isbn?(number_string)
        calculate_checksum(no_spaces_no_dashes) == no_spaces_no_dashes[-1]
     else 
        return false
-    end   
+    end
+
+#def invalid_isbn?          
   
 end	
