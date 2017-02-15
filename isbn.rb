@@ -125,7 +125,7 @@ def valid_isbn?(number_string)
     else 
        return false
     end
-
+#def refactored_isbn()
 #def invalid_isbn?          
   
 end	
