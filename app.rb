@@ -8,7 +8,7 @@ get '/' do
 
      #  'Now put this in your pipe & smoke it!'
 
-    erb :isbn_num
+    erb :isbn_input
 
 end
 
@@ -20,6 +20,10 @@ post '/isbn_num' do
 
 	num = params[:ISBN]
 
-	"#{@pgm_results}"    
+	@pgm_results = valid_isbn?(num)
+
+	erb :isbn_num    
 
 end
+
+
