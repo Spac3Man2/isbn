@@ -1,5 +1,5 @@
 require 'sinatra'
-
+require "sinatra/reloader" if development?
 require_relative "isbn.rb"
 
 get '/' do
